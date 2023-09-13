@@ -1,0 +1,93 @@
+.main-layout {
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  align-content: center;
+  display: grid;
+  grid:
+    "previewProductsSection" 1fr
+    "aboutUsSection" 1fr
+    "pricing" 1fr
+    "contactUs" 1fr
+    / 1fr;
+}
+
+.preview {
+  background-color: #7C2AE8;
+}
+
+.about {
+  background-color: #7C2AE8;
+}
+
+.pricing {
+  background-color: #4CB4B4;
+}
+
+.contact {
+  background-color: white;
+}
+.previewProductsSection {
+  grid-area: previewProductsSection;
+  background-image: url(../img/imgcontainer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutUsSection {
+  grid-area: aboutUsSection;
+}
+.pricingSection {
+  grid-area: pricing;
+}
+.contactUs {
+  grid-area: contactUs;
+}
+
+.mainlogosection {
+  display: grid;
+  grid:
+    "logo" auto
+    "navsection" auto
+    "previewing" auto
+    / auto;
+  grid-auto-flow: column dense;
+  align-content: center;
+  position: relative;
+  top: -9.3750em;
+  margin-bottom: 6.2500em;
+   
+}
+
+.logo {
+  grid-area: logo;
+  text-align: center; /* Centra horizontalmente */
+  position: relative;
+  margin-top: 3.1250em;
+  margin-bottom: -4.6875em;
+}
+.navsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: navsection;
+}
+.previewing {
+  grid-area: previewing;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+
+}
+
+.mainlogo{
+  vertical-align: middle; /* Centra verticalmente */
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al div */
+  max-height: 100%; /* Ajusta el tamaño máximo de la imagen al div */
+}
+
+a {
+  color: white;
+  text-decoration: none; /* Elimina el subrayado */
+  font-family: inherit; /* Utiliza la fuente heredada del elemento contenedor */
+  font-size: inherit; /* Utiliza el tamaño de fuente heredado del elemento contenedor */
+  /* Opcionalmente, puedes establecer otros estilos de fuente o tamaño aquí */
+}

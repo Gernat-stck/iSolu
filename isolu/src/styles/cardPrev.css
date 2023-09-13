@@ -1,0 +1,98 @@
+
+.container-cardprev {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.card-prev {
+  margin-left: 5%;
+  margin-top: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.container-cardprev .card-prev{
+    position: relative;
+    cursor: pointer;
+}
+
+.container-cardprev .card-prev .face{
+    width: 20em;
+    height: 12.5em;
+    transition: 0.5s;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.container-cardprev .card-prev .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container-cardprev .card-prev:hover .face.face1{
+    background: #801546;
+    transform: translateY(0);
+}
+
+.container-cardprev .card-prev .face.face1 .content-prev{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container-cardprev .card-prev:hover .face.face1 .content-prev{
+    opacity: 1;
+}
+
+.container-cardprev .card-prev .face.face1 .content-prev i{
+    max-width: 6.25em;
+}
+
+.container-cardprev .card-prev .face.face1 .content-prev h3{
+    margin: 10% 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container-cardprev .card-prev .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    box-sizing: border-box;
+    box-shadow: 0 1.25em 3.125em rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container-cardprev .card-prev:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container-cardprev .card-prev .face.face2 .content-prev p{
+    margin: 0;
+    padding: 0;
+}
+
+.container-cardprev .card-prev .face.face2 .content-prev a{
+    margin: 0.93em 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 0.3125em;
+    border: 0.0625em solid #333;
+}
+
+.container-cardprev .card-prev .face.face2 .content-prev a:hover{
+    background: #333;
+    color: #fff;
+}
